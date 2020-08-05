@@ -1,4 +1,4 @@
-# Electron V9版本，使用官网的`electron-quick-start`实例实现自动更新实例
+# Electron V9版本，使用官网的`electron-quick-start`示例实现
 
 ## 安装依赖包
 ```bash
