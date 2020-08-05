@@ -3,17 +3,32 @@
   "version": "1.0.13",
   "description": "A minimal Electron application",
   "main": "main.js",
+  "build": {
+    "appId": "com.test.app",
+    "mac": {
+      "target": ["dmg","zip"]
+    },
+    "win": {
+      "target": ["nsis","zip"]
+    },
+    "nsis": { 
+      "oneClick": false,  
+      "createDesktopShortcut": "always", 
+      "allowToChangeInstallationDirectory": true
+    }
+},
   "scripts": {
     "start": "electron .",
     "package": "electron-packager . --overwrite --platform=win32 --arch=x64 --out=out --icon=assets/app.ico",
     "package-mac": "electron-packager . --asar --overwrite --platform=darwin --arch=x64 --out=out ",
-    "build": "node ./script/installer.js"
+    "build": "node ./script/installer.js",
+    "dist": "electron-builder --win --x64"
   },
   "author": "常州完美维度科技有限公司",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^9.1.2",
-    
+    "electron-builder": "^22.7.0",
     "electron-packager": "^15.0.0",
     "electron-winstaller": "^4.0.1"
   },
