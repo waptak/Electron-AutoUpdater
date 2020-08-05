@@ -8,7 +8,7 @@ $ npm i
 
 ## 更新地址配置，存放打包出来的文件 `RELEASES` , `*.nupkg` , `*.exe` 
 ```js
-autoUpdater.setFeedURL('http://192.168.30.111:7430/upload/electron');
+autoUpdater.setFeedURL('{Your URL}');
 ```
 
 
