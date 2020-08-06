@@ -66,18 +66,18 @@ autoUpdater.on('checking-for-update', () => {
   sendStatusToWindow('Checking for update...');
 })
 autoUpdater.on('update-available', (ev, info) => {
-  sendStatusToWindow('Update available.');
+  sendStatusToWindow('Update available.'+ JSON.stringify(ev) + '--'+ JSON.stringify(info));
 })
 autoUpdater.on('update-not-available', (ev, info) => {
-  sendStatusToWindow('Update not available.');
+  sendStatusToWindow('Update not available.'+ JSON.stringify(ev) + '--'+ JSON.stringify(info));
 })
 autoUpdater.on('error', (ev, err) => {
-  sendStatusToWindow('Error in auto-updater.');
+  sendStatusToWindow('Error in auto-updater.'+ JSON.stringify(ev) + '--'+ JSON.stringify(err));
 })
 autoUpdater.on('download-progress', (ev, progressObj) => {
-  sendStatusToWindow('Download progress...'+ JSON.stringify(progressObj));
+  sendStatusToWindow('Download progress...'+ JSON.stringify(ev));
 })
 autoUpdater.on('update-downloaded', (ev, info) => {
-  sendStatusToWindow('Update downloaded; will install in 5 seconds');
+  sendStatusToWindow('Update downloaded; will install in 5 seconds'+ JSON.stringify(ev)+ '--'+ JSON.stringify(info));
 });
 
