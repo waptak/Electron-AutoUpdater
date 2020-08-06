@@ -4,3 +4,8 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+const { shell, ipcRenderer, Menu } = require('electron');
+
+ipcRenderer.on('message', (event, message) => {
+    console.log(message)
+})

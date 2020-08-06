@@ -8,3 +8,6 @@
 [2020-08-05 16:56:44.162] [info] whenReady {}
 [2020-08-05 16:58:45.220] [info] squirrelEvent .
 [2020-08-05 16:58:45.241] [info] whenReady {}
+[2020-08-06 13:48:14.581] [info] {}
+[2020-08-06 13:48:45.923] [info] Skip checkForUpdatesAndNotify because application is not packed
+[2020-08-06 13:49:39.420] [info] Skip checkForUpdatesAndNotify because application is not packed
