@@ -1,4 +1,4 @@
-# Electron V9版本，使用官网的`electron-quick-start`示例实现
+# electron-builder  （Electron V9版本，使用官网的`electron-quick-start`示例实现
 
 ## 安装依赖包
 ```bash
@@ -20,5 +20,4 @@ $ npm i
 ## 打包
 ```bash
 $ npm run dist
-
 ```
