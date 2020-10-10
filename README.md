@@ -6,15 +6,19 @@ $ npm i
 
 ```
 
-## 更新地址配置，存放打包出来的文件 `RELEASES` , `*.nupkg` , `*.exe` 
-```js
-autoUpdater.setFeedURL('{Your URL}');
+## package.json 更新地址配置
+```json
+"publish": [
+      {
+        "provider": "generic",
+        "url": "http://192.168.30.111:7430/upload/electron"
+      }
+    ]
 ```
 
 
 ## 打包
 ```bash
-$ npm run package
-$ npm run build 
+$ npm run dist
 
 ```
