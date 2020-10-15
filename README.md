@@ -1,4 +1,6 @@
-# Electron V9版本，使用官网的`electron-quick-start`示例实现
+# Electron V9版本
+
+## master分支使用 autoUpdater实现，   builder分支使用 electron-builder 实现
 
 ## 安装依赖包
 ```bash
